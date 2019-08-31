@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['192.168.1.71', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.gis',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -80,9 +81,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'llama.wsgi.application'
 
 
-# Validation Code Length
+# Validation & QR Code Length
 
 VALIDATION_CODE_LENGTH = 10
+QR_CODE_LENGTH = 15
+
 
 # User Reference Code Length
 

@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['192.168.1.71', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.gis',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'storages',
     'rest_framework',
     'rest_framework.authtoken',
+    'phonenumber_field',
     'rider',
     'trip',
     'vehicle',

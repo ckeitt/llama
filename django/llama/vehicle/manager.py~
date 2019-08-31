@@ -1,0 +1,10 @@
+import socket
+
+class VehicleSocketManager:
+
+    def __init__(self, public_ip_address, port):
+        self.public_ip_address = public_ip_address
+        self.port = port
+
+    def unlock_vehicle(self):
+        
