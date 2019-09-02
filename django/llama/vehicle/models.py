@@ -41,6 +41,7 @@ class Vehicle(models.Model):
     
     def __unicode__(self):
         return self.name
+
 @receiver(post_save, sender=Vehicle)
 def assignValidationCodes(sender, instance, created, **kwargs):
     if (created):

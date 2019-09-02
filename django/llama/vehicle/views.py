@@ -26,8 +26,7 @@ class UnlockVehicleView(generics.GenericAPIView):
     def post(self, request, *args, **kwargs):
         qr_code = request.data.pop('qr_verification_code')
         vehicle = Vehicle.objects.get(qr_verification_code=qr_code)
-        print vehicle
-        socket_manager = VehicleSocketManager(vehicle.public_ip_address, vehicle.port_number)
+        socket_manager = VehicleSocketManager(vehicle.public_ip_address, vehicle.port_number, vehicle.access_key)
         socket_manager.unlock_vehicle()
         
         return Response(data={'vehicle_status' : 'unlocked'}, status=status.HTTP_200_OK)

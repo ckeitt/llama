@@ -10,11 +10,14 @@ SoftwareSerial *fonaSerial = &fonaSS;
 
 char replybuffer[255];
 bool active;
+String accesskey;
 
 Adafruit_FONA_3G fona = Adafruit_FONA_3G(FONA_RST);
 
 void setup() {
   while (!Serial);
+
+  accesskey = "4281961753";
 
   Serial.begin(115200);
   Serial.println(F("Device Manager engage."));
@@ -24,9 +27,7 @@ void setup() {
 
   active = false;
   pinMode(A0, OUTPUT);
-  digitalWrite(A0, LOW);
-  
-  (fona.sendCheckReply(F("AT+CPSI?"), F("OK")));
+  digitalWrite(A0, HIGH);
   
   while (!(fona.sendCheckReply(F("AT+CREG=2"), F("OK")))) {
     delay(1000);
@@ -47,7 +48,7 @@ void setup() {
     flushInput();
   }
 
-  while (!(fona.sendCheckReply(F("AT+CSOCKSETPN=1"), F("OK")))) {
+   while (!(fona.sendCheckReply(F("AT+CSOCKSETPN=1"), F("OK")))) {
     delay (1000);
     flushInput();
   }
@@ -71,7 +72,7 @@ void setup() {
     delay (1000);
     flushInput();
   }
-
+  
   while (!(fona.sendCheckReply(F("AT+CIPCCFG=10,0,0,1,1,0,500"), F("OK")))) {
     delay (1000);
     flushInput();
@@ -90,17 +91,23 @@ void setup() {
 }
 
 void loop() {
-    if (fona.sendCheckReply(F("AT+CIPRXGET=2,1,1500"), F("0"))) {
-      if (active == false) {
-        digitalWrite(A0, HIGH);
-        active = true;  
-      } else {
-        digitalWrite(A0, LOW);
-        active = false;
+
+    fona.println(F("AT+CIPRXGET=2,1,1500"));
+    flushInput();
+    readline(1000, 0, replybuffer);
+    if(strncmp(replybuffer, accesskey.c_str(), 10) == 0) {
+      if (replybuffer[10] == '0') {
+        if (active == false) {
+          digitalWrite(A0, LOW);
+          active = true;  
+        } else {
+          digitalWrite(A0, HIGH);
+          active = false;
+        }
       }
     }
     
-    delay(10);
+    delay(0);
 }
 
 uint8_t readline(uint16_t timeout, boolean multiline, char * rbuffer) {
