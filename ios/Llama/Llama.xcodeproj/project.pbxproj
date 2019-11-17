@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12395D6EC4ABBF80D512F884 /* libPods-Llama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5436CD8AA000B30A0E832262 /* libPods-Llama.a */; };
+		184B9A0E2379FD0A0083DFFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B9A0D2379FD0A0083DFFD /* AppDelegate.m */; };
+		184B9A192379FD0C0083DFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B9A182379FD0C0083DFFD /* Assets.xcassets */; };
+		184B9A1C2379FD0C0083DFFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B9A1A2379FD0C0083DFFD /* LaunchScreen.storyboard */; };
+		184B9A1F2379FD0C0083DFFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B9A1E2379FD0C0083DFFD /* main.m */; };
+		184B9A292379FD0C0083DFFD /* LlamaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B9A282379FD0C0083DFFD /* LlamaTests.m */; };
+		184B9A342379FD0C0083DFFD /* LlamaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B9A332379FD0C0083DFFD /* LlamaUITests.m */; };
+		18E7E7E42380A424006929CF /* LLamaAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7E7E32380A424006929CF /* LLamaAppManager.m */; };
+		18E7E7E92380B1F8006929CF /* CoreObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7E7E82380B1F8006929CF /* CoreObject.m */; };
+		18E7E7EF2380B25B006929CF /* ExploreMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7E7EE2380B25B006929CF /* ExploreMapViewController.m */; };
+		18E7E7F22380B26B006929CF /* ExploreMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7E7F12380B26B006929CF /* ExploreMapView.m */; };
+		18E7E7F62380B944006929CF /* LLamaAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7E7F52380B944006929CF /* LLamaAPI.m */; };
+		18E7E7F92380B9F3006929CF /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7E7F82380B9F3006929CF /* Vehicle.m */; };
+		DD426838ED3345C3ABF5A171 /* libPods-LlamaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB2362E61E55F49393983D3 /* libPods-LlamaTests.a */; };
+		DE65407EFEA430E16D4389D2 /* libPods-Llama-LlamaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E04A123D918D60B4F1966F /* libPods-Llama-LlamaUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		184B9A252379FD0C0083DFFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184B9A012379FD0A0083DFFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184B9A082379FD0A0083DFFD;
+			remoteInfo = Llama;
+		};
+		184B9A302379FD0C0083DFFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184B9A012379FD0A0083DFFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184B9A082379FD0A0083DFFD;
+			remoteInfo = Llama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AF383494E51BF445B74F32F /* Pods-Llama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Llama.release.xcconfig"; path = "Target Support Files/Pods-Llama/Pods-Llama.release.xcconfig"; sourceTree = "<group>"; };
+		184B9A092379FD0A0083DFFD /* Llama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Llama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		184B9A0C2379FD0A0083DFFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		184B9A0D2379FD0A0083DFFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		184B9A182379FD0C0083DFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184B9A1B2379FD0C0083DFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		184B9A1D2379FD0C0083DFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184B9A1E2379FD0C0083DFFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		184B9A242379FD0C0083DFFD /* LlamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LlamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184B9A282379FD0C0083DFFD /* LlamaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LlamaTests.m; sourceTree = "<group>"; };
+		184B9A2A2379FD0C0083DFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184B9A2F2379FD0C0083DFFD /* LlamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LlamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184B9A332379FD0C0083DFFD /* LlamaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LlamaUITests.m; sourceTree = "<group>"; };
+		184B9A352379FD0C0083DFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E7E7E22380A424006929CF /* LLamaAppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLamaAppManager.h; sourceTree = "<group>"; };
+		18E7E7E32380A424006929CF /* LLamaAppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLamaAppManager.m; sourceTree = "<group>"; };
+		18E7E7E72380B1F8006929CF /* CoreObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreObject.h; sourceTree = "<group>"; };
+		18E7E7E82380B1F8006929CF /* CoreObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreObject.m; sourceTree = "<group>"; };
+		18E7E7ED2380B25B006929CF /* ExploreMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreMapViewController.h; sourceTree = "<group>"; };
+		18E7E7EE2380B25B006929CF /* ExploreMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreMapViewController.m; sourceTree = "<group>"; };
+		18E7E7F02380B26B006929CF /* ExploreMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreMapView.h; sourceTree = "<group>"; };
+		18E7E7F12380B26B006929CF /* ExploreMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreMapView.m; sourceTree = "<group>"; };
+		18E7E7F42380B944006929CF /* LLamaAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLamaAPI.h; sourceTree = "<group>"; };
+		18E7E7F52380B944006929CF /* LLamaAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLamaAPI.m; sourceTree = "<group>"; };
+		18E7E7F72380B9F3006929CF /* Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		18E7E7F82380B9F3006929CF /* Vehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		1EB276900DA29148A46D9328 /* Pods-Llama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Llama.debug.xcconfig"; path = "Target Support Files/Pods-Llama/Pods-Llama.debug.xcconfig"; sourceTree = "<group>"; };
+		2926EF6B9FD7C2E4A7468A18 /* Pods-Llama-LlamaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Llama-LlamaUITests.release.xcconfig"; path = "Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		308006F958AED5F534E67210 /* Pods-LlamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LlamaTests.release.xcconfig"; path = "Target Support Files/Pods-LlamaTests/Pods-LlamaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5436CD8AA000B30A0E832262 /* libPods-Llama.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Llama.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901871BAE5176D0B4CFF1FEC /* Pods-Llama-LlamaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Llama-LlamaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7E04A123D918D60B4F1966F /* libPods-Llama-LlamaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Llama-LlamaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB2362E61E55F49393983D3 /* libPods-LlamaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LlamaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE11581F57124D8B32C2C2AC /* Pods-LlamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LlamaTests.debug.xcconfig"; path = "Target Support Files/Pods-LlamaTests/Pods-LlamaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184B9A062379FD0A0083DFFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12395D6EC4ABBF80D512F884 /* libPods-Llama.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B9A212379FD0C0083DFFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD426838ED3345C3ABF5A171 /* libPods-LlamaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B9A2C2379FD0C0083DFFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE65407EFEA430E16D4389D2 /* libPods-Llama-LlamaUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184B9A002379FD0A0083DFFD = {
+			isa = PBXGroup;
+			children = (
+				184B9A0B2379FD0A0083DFFD /* Llama */,
+				184B9A272379FD0C0083DFFD /* LlamaTests */,
+				184B9A322379FD0C0083DFFD /* LlamaUITests */,
+				184B9A0A2379FD0A0083DFFD /* Products */,
+				DE6EB758CC64B871C325B749 /* Pods */,
+				D74E832EEFB4006D1B3AA38D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		184B9A0A2379FD0A0083DFFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				184B9A092379FD0A0083DFFD /* Llama.app */,
+				184B9A242379FD0C0083DFFD /* LlamaTests.xctest */,
+				184B9A2F2379FD0C0083DFFD /* LlamaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		184B9A0B2379FD0A0083DFFD /* Llama */ = {
+			isa = PBXGroup;
+			children = (
+				18E7E7F32380B935006929CF /* API */,
+				18E7E7E52380B1DA006929CF /* Models */,
+				18E7E7EA2380B223006929CF /* Explore Map */,
+				18E7E7DE2380A3F3006929CF /* Application Delegate */,
+				184B9A182379FD0C0083DFFD /* Assets.xcassets */,
+				184B9A1A2379FD0C0083DFFD /* LaunchScreen.storyboard */,
+				184B9A1D2379FD0C0083DFFD /* Info.plist */,
+				184B9A1E2379FD0C0083DFFD /* main.m */,
+			);
+			path = Llama;
+			sourceTree = "<group>";
+		};
+		184B9A272379FD0C0083DFFD /* LlamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				184B9A282379FD0C0083DFFD /* LlamaTests.m */,
+				184B9A2A2379FD0C0083DFFD /* Info.plist */,
+			);
+			path = LlamaTests;
+			sourceTree = "<group>";
+		};
+		184B9A322379FD0C0083DFFD /* LlamaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				184B9A332379FD0C0083DFFD /* LlamaUITests.m */,
+				184B9A352379FD0C0083DFFD /* Info.plist */,
+			);
+			path = LlamaUITests;
+			sourceTree = "<group>";
+		};
+		18E7E7DE2380A3F3006929CF /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				184B9A0C2379FD0A0083DFFD /* AppDelegate.h */,
+				184B9A0D2379FD0A0083DFFD /* AppDelegate.m */,
+				18E7E7E22380A424006929CF /* LLamaAppManager.h */,
+				18E7E7E32380A424006929CF /* LLamaAppManager.m */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		18E7E7E52380B1DA006929CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18E7E7E72380B1F8006929CF /* CoreObject.h */,
+				18E7E7E82380B1F8006929CF /* CoreObject.m */,
+				18E7E7E62380B1E6006929CF /* Vehicle */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18E7E7E62380B1E6006929CF /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				18E7E7F72380B9F3006929CF /* Vehicle.h */,
+				18E7E7F82380B9F3006929CF /* Vehicle.m */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		18E7E7EA2380B223006929CF /* Explore Map */ = {
+			isa = PBXGroup;
+			children = (
+				18E7E7EC2380B245006929CF /* Views */,
+				18E7E7EB2380B23E006929CF /* View Controllers */,
+			);
+			path = "Explore Map";
+			sourceTree = "<group>";
+		};
+		18E7E7EB2380B23E006929CF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18E7E7ED2380B25B006929CF /* ExploreMapViewController.h */,
+				18E7E7EE2380B25B006929CF /* ExploreMapViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		18E7E7EC2380B245006929CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18E7E7F02380B26B006929CF /* ExploreMapView.h */,
+				18E7E7F12380B26B006929CF /* ExploreMapView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18E7E7F32380B935006929CF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				18E7E7F42380B944006929CF /* LLamaAPI.h */,
+				18E7E7F52380B944006929CF /* LLamaAPI.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D74E832EEFB4006D1B3AA38D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5436CD8AA000B30A0E832262 /* libPods-Llama.a */,
+				D7E04A123D918D60B4F1966F /* libPods-Llama-LlamaUITests.a */,
+				EEB2362E61E55F49393983D3 /* libPods-LlamaTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE6EB758CC64B871C325B749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EB276900DA29148A46D9328 /* Pods-Llama.debug.xcconfig */,
+				0AF383494E51BF445B74F32F /* Pods-Llama.release.xcconfig */,
+				901871BAE5176D0B4CFF1FEC /* Pods-Llama-LlamaUITests.debug.xcconfig */,
+				2926EF6B9FD7C2E4A7468A18 /* Pods-Llama-LlamaUITests.release.xcconfig */,
+				FE11581F57124D8B32C2C2AC /* Pods-LlamaTests.debug.xcconfig */,
+				308006F958AED5F534E67210 /* Pods-LlamaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		184B9A082379FD0A0083DFFD /* Llama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184B9A382379FD0C0083DFFD /* Build configuration list for PBXNativeTarget "Llama" */;
+			buildPhases = (
+				A32F3AE0408F9979287B3DC9 /* [CP] Check Pods Manifest.lock */,
+				184B9A052379FD0A0083DFFD /* Sources */,
+				184B9A062379FD0A0083DFFD /* Frameworks */,
+				184B9A072379FD0A0083DFFD /* Resources */,
+				E391D8E3A75A060A85B769C7 /* [CP] Embed Pods Frameworks */,
+				A9333D463A290AE6900EA708 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Llama;
+			productName = Llama;
+			productReference = 184B9A092379FD0A0083DFFD /* Llama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		184B9A232379FD0C0083DFFD /* LlamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184B9A3B2379FD0C0083DFFD /* Build configuration list for PBXNativeTarget "LlamaTests" */;
+			buildPhases = (
+				109FD65867F509E65F312F4E /* [CP] Check Pods Manifest.lock */,
+				184B9A202379FD0C0083DFFD /* Sources */,
+				184B9A212379FD0C0083DFFD /* Frameworks */,
+				184B9A222379FD0C0083DFFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184B9A262379FD0C0083DFFD /* PBXTargetDependency */,
+			);
+			name = LlamaTests;
+			productName = LlamaTests;
+			productReference = 184B9A242379FD0C0083DFFD /* LlamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		184B9A2E2379FD0C0083DFFD /* LlamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184B9A3E2379FD0C0083DFFD /* Build configuration list for PBXNativeTarget "LlamaUITests" */;
+			buildPhases = (
+				00E8298FF19B26469824CBCD /* [CP] Check Pods Manifest.lock */,
+				184B9A2B2379FD0C0083DFFD /* Sources */,
+				184B9A2C2379FD0C0083DFFD /* Frameworks */,
+				184B9A2D2379FD0C0083DFFD /* Resources */,
+				4E32C6A3240C2D912C5264A7 /* [CP] Embed Pods Frameworks */,
+				A18FB4BCFB138CDB53F86587 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184B9A312379FD0C0083DFFD /* PBXTargetDependency */,
+			);
+			name = LlamaUITests;
+			productName = LlamaUITests;
+			productReference = 184B9A2F2379FD0C0083DFFD /* LlamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		184B9A012379FD0A0083DFFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = com.rider.llama;
+				TargetAttributes = {
+					184B9A082379FD0A0083DFFD = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					184B9A232379FD0C0083DFFD = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 184B9A082379FD0A0083DFFD;
+					};
+					184B9A2E2379FD0C0083DFFD = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 184B9A082379FD0A0083DFFD;
+					};
+				};
+			};
+			buildConfigurationList = 184B9A042379FD0A0083DFFD /* Build configuration list for PBXProject "Llama" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 184B9A002379FD0A0083DFFD;
+			productRefGroup = 184B9A0A2379FD0A0083DFFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				184B9A082379FD0A0083DFFD /* Llama */,
+				184B9A232379FD0C0083DFFD /* LlamaTests */,
+				184B9A2E2379FD0C0083DFFD /* LlamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		184B9A072379FD0A0083DFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B9A1C2379FD0C0083DFFD /* LaunchScreen.storyboard in Resources */,
+				184B9A192379FD0C0083DFFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B9A222379FD0C0083DFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B9A2D2379FD0C0083DFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E8298FF19B26469824CBCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Llama-LlamaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		109FD65867F509E65F312F4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LlamaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E32C6A3240C2D912C5264A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A18FB4BCFB138CDB53F86587 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Llama-LlamaUITests/Pods-Llama-LlamaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A32F3AE0408F9979287B3DC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Llama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9333D463A290AE6900EA708 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama/Pods-Llama-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama/Pods-Llama-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Llama/Pods-Llama-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E391D8E3A75A060A85B769C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama/Pods-Llama-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Llama/Pods-Llama-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Llama/Pods-Llama-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		184B9A052379FD0A0083DFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B9A0E2379FD0A0083DFFD /* AppDelegate.m in Sources */,
+				18E7E7F62380B944006929CF /* LLamaAPI.m in Sources */,
+				18E7E7F22380B26B006929CF /* ExploreMapView.m in Sources */,
+				184B9A1F2379FD0C0083DFFD /* main.m in Sources */,
+				18E7E7F92380B9F3006929CF /* Vehicle.m in Sources */,
+				18E7E7E42380A424006929CF /* LLamaAppManager.m in Sources */,
+				18E7E7EF2380B25B006929CF /* ExploreMapViewController.m in Sources */,
+				18E7E7E92380B1F8006929CF /* CoreObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B9A202379FD0C0083DFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B9A292379FD0C0083DFFD /* LlamaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184B9A2B2379FD0C0083DFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B9A342379FD0C0083DFFD /* LlamaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		184B9A262379FD0C0083DFFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184B9A082379FD0A0083DFFD /* Llama */;
+			targetProxy = 184B9A252379FD0C0083DFFD /* PBXContainerItemProxy */;
+		};
+		184B9A312379FD0C0083DFFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184B9A082379FD0A0083DFFD /* Llama */;
+			targetProxy = 184B9A302379FD0C0083DFFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		184B9A1A2379FD0C0083DFFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184B9A1B2379FD0C0083DFFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		184B9A362379FD0C0083DFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		184B9A372379FD0C0083DFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		184B9A392379FD0C0083DFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB276900DA29148A46D9328 /* Pods-Llama.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4YJFFKGC4;
+				INFOPLIST_FILE = Llama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LLama.Llama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		184B9A3A2379FD0C0083DFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF383494E51BF445B74F32F /* Pods-Llama.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4YJFFKGC4;
+				INFOPLIST_FILE = Llama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LLama.Llama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		184B9A3C2379FD0C0083DFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE11581F57124D8B32C2C2AC /* Pods-LlamaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4YJFFKGC4;
+				INFOPLIST_FILE = LlamaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LLama.LlamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Llama.app/Llama";
+			};
+			name = Debug;
+		};
+		184B9A3D2379FD0C0083DFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 308006F958AED5F534E67210 /* Pods-LlamaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4YJFFKGC4;
+				INFOPLIST_FILE = LlamaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LLama.LlamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Llama.app/Llama";
+			};
+			name = Release;
+		};
+		184B9A3F2379FD0C0083DFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901871BAE5176D0B4CFF1FEC /* Pods-Llama-LlamaUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4YJFFKGC4;
+				INFOPLIST_FILE = LlamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LLama.LlamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Llama;
+			};
+			name = Debug;
+		};
+		184B9A402379FD0C0083DFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2926EF6B9FD7C2E4A7468A18 /* Pods-Llama-LlamaUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4YJFFKGC4;
+				INFOPLIST_FILE = LlamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LLama.LlamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Llama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184B9A042379FD0A0083DFFD /* Build configuration list for PBXProject "Llama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B9A362379FD0C0083DFFD /* Debug */,
+				184B9A372379FD0C0083DFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184B9A382379FD0C0083DFFD /* Build configuration list for PBXNativeTarget "Llama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B9A392379FD0C0083DFFD /* Debug */,
+				184B9A3A2379FD0C0083DFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184B9A3B2379FD0C0083DFFD /* Build configuration list for PBXNativeTarget "LlamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B9A3C2379FD0C0083DFFD /* Debug */,
+				184B9A3D2379FD0C0083DFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184B9A3E2379FD0C0083DFFD /* Build configuration list for PBXNativeTarget "LlamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B9A3F2379FD0C0083DFFD /* Debug */,
+				184B9A402379FD0C0083DFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 184B9A012379FD0A0083DFFD /* Project object */;
+}

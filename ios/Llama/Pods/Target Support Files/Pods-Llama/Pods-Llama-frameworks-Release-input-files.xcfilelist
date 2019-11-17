@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Llama/Pods-Llama-frameworks.sh
+${PODS_ROOT}/TwilioChatClient/TwilioChatClient.framework
+${PODS_ROOT}/TwilioChatClient/TwilioChatClient.framework.dSYM

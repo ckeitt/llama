@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'Llama' do
+  pod 'Stripe'
+  pod 'TwilioChatClient', '~> 2.3.2'
+  pod 'AFNetworking', '~> 3.0'
+  pod 'RestKit', '~> 0.27.3'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'Mixpanel'
+  # Pods for Llama
+
+  target 'LlamaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'LlamaUITests' do
+    # Pods for testing
+  end
+
+end

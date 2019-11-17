@@ -26,8 +26,8 @@ void setup() {
   fona.begin(*fonaSerial);
 
   active = false;
-  pinMode(A0, OUTPUT);
-  digitalWrite(A0, HIGH);
+  pinMode(11, OUTPUT);
+  digitalWrite(11, HIGH);
   
   while (!(fona.sendCheckReply(F("AT+CREG=2"), F("OK")))) {
     delay(1000);
@@ -91,17 +91,16 @@ void setup() {
 }
 
 void loop() {
-
     fona.println(F("AT+CIPRXGET=2,1,1500"));
     flushInput();
     readline(1000, 0, replybuffer);
     if(strncmp(replybuffer, accesskey.c_str(), 10) == 0) {
       if (replybuffer[10] == '0') {
         if (active == false) {
-          digitalWrite(A0, LOW);
+          digitalWrite(11, LOW);
           active = true;  
         } else {
-          digitalWrite(A0, HIGH);
+          digitalWrite(11, HIGH);
           active = false;
         }
       }

@@ -28,7 +28,7 @@ DEV_DATABASE = True
 DEV_STRIPE_USAGE = True
 DEV_TWILIO_USAGE = True
 
-ALLOWED_HOSTS = ['192.168.1.71', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.71', '127.0.0.1', 'llama-prod.us-east-1.elasticbeanstalk.com', 'api.ridellama.com']
 
 # Application definition
 
@@ -115,12 +115,12 @@ if (DEV_DATABASE == True):
 else:
     DATABASES = { 
         'default' : {
-#            'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-#            'NAME' : 'llamadb',
-#            'USER' : os.environ['LLAMA_DB_USERNAME'],
-#            'PASSWORD' : os.environ['LLAMA_DB_PASS'],
-#            'HOST' : 'llama-db.cilxvay9au0s.us-east-1.rds.amazonaws.com',
-#            'PORT' : '5432',
+            'ENGINE' : 'django.contrib.gis.db.backends.postgis',
+            'NAME' : None,
+            'USER' : os.environ['LLAMA_DATABASE_USER'],
+            'PASSWORD' : os.environ['LLAMA_DATABASE_USER_PASS'],
+            'HOST' : os.environ['LLAMA_DATABASE_HOST_ENDPOINT'],
+            'PORT' : os.environ['LLAMA_DATABASE_PORT_NUMBER'],
             }
         }
 
