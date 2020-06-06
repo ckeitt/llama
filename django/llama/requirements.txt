@@ -3,7 +3,7 @@ boto3==1.9.218
 botocore==1.12.218
 certifi==2019.6.16
 chardet==3.0.4
-Django==1.11.23
+Django==1.11.29
 django-phonenumber-field==2.4.0
 django-storages==1.7.1
 djangorestframework==3.9.4
