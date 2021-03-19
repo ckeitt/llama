@@ -6,7 +6,7 @@ chardet==3.0.4
 Django==1.11.23
 django-phonenumber-field==2.4.0
 django-storages==1.7.1
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 docutils==0.15.2
 futures==3.3.0
 idna==2.8
